@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-kngg
+  namespace: jvm-build-rmaq-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/psturc/test-images@sha256:d78149ac23ddc6a5db87b80d40e5ee7066c1592e8e35a4ad0ee7b0197bb9685e
+        name: container-image
+        resources: {}
+status: {}
